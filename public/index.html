@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Please fill out the form:</h1>
+    <form method="POST" action="/post-feedback">
+        <p><label>Name:</label></p>
+        <p><input type="text" name="client-name" required></p>
+        
+        <p><label>Email:</label></p>
+        <p><input type="text" name="client-email" required></p>
+
+        <p><label>Number:</label></p>
+        <p><input type="number" name="client-number" required></p>
+
+        <p><label>Comment:</label></p>
+        <p><textarea name="comment"></textarea></p>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <ul>
+        <li><a title="View all" href="/view-all">View all</a></li>
+        <li><a title="View limit 2" href="/view-limit-2">View (limited to 2)</a></li>
+        <li><a title="View comment 'te'" href="/view-string-contains-test">View (string contains "test" in "name" or "comment" field)</a></li>
+        <li><a title="View comment 'test'" href="/view-string-exactly-test">View (string is exactly "test")</a></li>
+        <li><a title="View greater than '5'" href="/view-greater-than-5">View greater than 5</a></li>
+
+        <li><a title="Insert one" href="/insert-one">Insert one</a></li>
+        <li><a title="Insert many" href="/insert-many">Insert many</a></li>
+
+        <li><a title="Increment Ariel's 'number' field" href="/increment-ariel">Increment Ariel</a></li>
+        <li><a title="Rename field" href="/rename-name-field">Rename "name" field</a></li>
+        <li><a title="Rename field value" href="/rename-field-value">Rename field value</a></li>
+
+        <li><a title='Delete the whole collection' href="/delete">Delete the whole collection</a></li>
+    </ul>
+
+</body>
+</html>

@@ -1,12 +1,12 @@
 # node-and-mongodb-barebone-example
 
-This is a minimalistic yet quite complete example of a CRUD app with Node.js and MongoDB.
+This is a simple yet complete example of a CRUD app using Node.js and MongoDB.
 
 Doing this exercice helped me wrap my head around how to have Node.js and MongoDB interact with one another.
 
 # The starting point
 
-The starting point for this exercise was Programming Mentor's tutorial. The final result is now quite different this.
+The starting point for this exercise was Programming Mentor's tutorial. The final result is now quite different.
 
 Thank you, Programming Mentor!
 

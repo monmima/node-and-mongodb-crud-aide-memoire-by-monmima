@@ -8,16 +8,16 @@
     <h1>Please fill out the form:</h1>
     <form method="POST" action="/post-feedback">
         <p><label>Name:</label></p>
-        <p><input type="text" name="client-name" required></p>
+        <p><input type="text" name="name" required></p>
         
         <p><label>Email:</label></p>
-        <p><input type="text" name="client-email" required></p>
+        <p><input type="text" name="email" required></p>
 
         <p><label>Number:</label></p>
-        <p><input type="number" name="client-number" required></p>
+        <p><input type="number" name="number" required></p>
 
         <p><label>Comment:</label></p>
-        <p><textarea name="comment"></textarea></p>
+        <p><textarea name="comment" required></textarea></p>
         
         <input type="submit" value="Submit">
     </form>
@@ -37,6 +37,8 @@
         <li><a title="Rename field value" href="/rename-field-value">Rename field value</a></li>
 
         <li><a title='Delete the whole collection' href="/delete">Delete the whole collection</a></li>
+
+        <li><a title='Display an EJS template' href="/template">Display an EJS template</a></li>
     </ul>
 
 </body>

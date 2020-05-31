@@ -4,7 +4,9 @@ const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const port = process.env.port || 3000;
 
-const urlString = mongodb.MongoClient.connect('mongodb://localhost:27017');
+const urlString = mongodb.MongoClient.connect('mongodb://localhost:27017'); // MongoDB 2
+// const urlString = mongodb.MongoClient.connect('mongodb://localhost:27017', { useNewUrlParser: true }); // MongoDB 3
+// const dbConn = mongodb.MongoClient.connect('mongodb://localhost:27017',{ useNewUrlParser: true , useUnifiedTopology : true}); // MongoDB 3
 
 const app = express();
 
@@ -192,6 +194,23 @@ app.get('/insert-many', (req, res) => {
     });
     res.send('Done!');
 });
+
+// // test page
+// app.get('/test', (req, res) => {
+//     let resultArray = [];
+
+//     mongodb.connect(urlString, (err, db) => {
+
+//         const cursor = db.collection("feedbacks").find();
+//         cursor.forEach((doc, err) => {
+//             resultArray.push(doc);
+//         }, () => {
+//             db.close();
+//             res.send(resultArray);
+//         });
+
+//     });
+// });
 
 /**
  * handling 404 errors

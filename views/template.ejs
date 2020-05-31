@@ -10,9 +10,10 @@
             align-items: center;
             background-color: aqua;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             min-height: 50px;
-
+            padding: 5px;
         }
         .database {
             background-color: black;
@@ -29,13 +30,13 @@
 <body>
     <%- include("header") %>
 
-    <h1>EJS template</h1>
+    <h2>EJS template</h2>
     
     <p>This is the only page of this app using EJS/templating.</p>
 
     <p>The items below come from a MongoDB database.</p>
 
-    <p>Go back to the main page of the app and populate the database if nothing is listed below.</p>
+    <p><strong>If nothing shows up below in black boxes</strong>, go back to the main page of the app and populate the database.</p>
 
     <div>
         <% for (let feedback of feedbacks) { %>

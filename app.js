@@ -42,8 +42,6 @@ app.get('/template', (req, res) => {
         db.collection('feedbacks').find({}).toArray().then((feedbacks) => {
             res.render("template", { feedbacks : feedbacks });
 
-
-
             console.log(feedbacks);
         });
     });
@@ -193,6 +191,14 @@ app.get('/insert-many', (req, res) => {
     });
     res.send('Done!');
 });
+
+/**
+ * handling 404 errors
+ * source: https://expressjs.com/en/starter/faq.html
+ */
+app.use(function (req, res, next) {
+    res.status(404).send("404 - Sorry can't find that!")
+})
 
 app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0', () => console.log(`Server running on 3000 (most likely)`));
 

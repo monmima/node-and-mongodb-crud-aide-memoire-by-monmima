@@ -9,10 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
   "devDependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
-    "mongodb": "^2.2.26"
+    "mongodb": "^2.2.26",
+    "ejs": "^3.1.3"
   }
 }

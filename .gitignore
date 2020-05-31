@@ -1,6 +1,9 @@
-# Merci à https://github.com/heavymental33 #
-# Son fichier https://github.com/heavymental33/dismoiou-v4/blob/master/.gitignore me sert de modèle #
+# Thanks to: https://github.com/heavymental33 #
+# I use one of his files as a model: https://github.com/heavymental33/dismoiou-v4/blob/master/.gitignore #
 
 # Node #
 node_modules/
 package-lock.json
+
+# Others #
+time.txt

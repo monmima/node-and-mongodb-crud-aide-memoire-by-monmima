@@ -19,6 +19,36 @@ app.post('/post-feedback', (req, res) => {
     res.send('Data received:\n' + JSON.stringify(req.body));
 });
 
+// view EJS template
+app.get('/view-ejs', (req, res) => {
+    dbConn.then((db) => {
+        db.collection('feedbacks').find({}).toArray().then((feedbacks) => {
+            res.render("views/template");
+        });
+    });
+});
+
+/**
+ * EJS
+ * concatenate the current working directory
+ * and a folder called views
+ */
+app.set("views", path.join(__dirname, "views"));
+app.set("view engine", "ejs");
+
+// view all ejs
+app.get('/template', (req, res) => {
+    dbConn.then((db) => {
+        db.collection('feedbacks').find({}).toArray().then((feedbacks) => {
+            res.render("template", { feedbacks : feedbacks });
+
+
+
+            console.log(feedbacks);
+        });
+    });
+});
+
 // view all
 app.get('/view-all', (req, res) => {
     dbConn.then((db) => {

@@ -6,6 +6,9 @@
     <title>Document</title>
 
     <style>
+        figure {
+            border: 2px solid black;
+        }
         footer, header {
             align-items: center;
             background-color: aqua;
@@ -14,6 +17,10 @@
             justify-content: center;
             min-height: 50px;
             padding: 5px;
+        }
+        img {
+            max-height: 50px;
+            max-width: auto;
         }
         .database {
             background-color: black;
@@ -25,13 +32,34 @@
             font-size: 1.2em;
             text-align: center;
         }
+        figure, .images {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
     <%- include("header") %>
 
-    <h2>EJS template</h2>
+    <h2>Main EJS template</h2>
+
+    <div class="images">
+        <figure>
+            <!---->
+            <img src="http://icons.iconarchive.com/icons/goescat/macaron/256/gimp-icon.png" alt="Remote Image">
+            <figcaption>Remote image</figcaption>
+        </figure>
     
+        <figure>
+            <!--http://icons.iconarchive.com/icons/goescat/macaron/256/firefox-icon.png-->
+            <img src="img/firefox-icon.png" alt="Local Image">
+            <figcaption>Local image</figcaption>
+        </figure>
+    </div>
+
     <p>This is the only page of this app using EJS/templating.</p>
 
     <p>The items below come from a MongoDB database.</p>

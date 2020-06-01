@@ -2,12 +2,15 @@ const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
-const port = process.env.port || 3000;
+
 const url = "mongodb://localhost:27017/";
 
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+// serving static files from the "public" folder
+// this includes: image files, HTML files, etc.
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 /**
@@ -369,9 +372,13 @@ app.use(function (req, res, next) {
 
 /**
  * Listening to a port
+ * first you look for the environment variable; if you can't find it, then you use port 3000
  * Steve Griffith
  * https://www.youtube.com/watch?v=iM_S4RczozU
  */
+
+const port = process.env.port || 3000;
+
 app.listen(port, err => {
     if (err) {
         return console.log("ERROR", err);

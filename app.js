@@ -9,8 +9,11 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+/**
+ * 
+ */
 // serving static files from the "public" folder
-// this includes: image files, HTML files, etc.
+// this includes: image, HTML and JS files, etc.
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 /**

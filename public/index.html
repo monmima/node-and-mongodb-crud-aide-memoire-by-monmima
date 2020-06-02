@@ -22,23 +22,39 @@
         <input type="submit" value="Submit">
     </form>
 
+    <h5>Create</h5>
+    <ul>
+        <li><a title="Insert one" href="/insert-one">Insert one</a></li>
+        <li><a title="Insert many" href="/insert-many">Insert many</a></li>
+    </ul>
+
+    <h5>Read</h5>
     <ul>
         <li><a title="View all" href="/view-all">View all</a></li>
         <li><a title="View limit 2" href="/view-limit-2">View (limited to 2)</a></li>
         <li><a title="View comment 'te'" href="/view-string-contains-test">View (string contains "test" in "name" or "comment" field)</a></li>
         <li><a title="View comment 'test'" href="/view-string-exactly-test">View (string is exactly "test")</a></li>
         <li><a title="View greater than '5'" href="/view-greater-than-5">View greater than 5</a></li>
+    </ul>
 
-        <li><a title="Insert one" href="/insert-one">Insert one</a></li>
-        <li><a title="Insert many" href="/insert-many">Insert many</a></li>
-
+    <h5>Update</h5>
+    <ul>
         <li><a title="Increment Ariel's 'number' field" href="/increment-ariel">Increment Ariel</a></li>
         <li><a title="Rename field" href="/rename-name-field">Rename "name" field</a></li>
         <li><a title="Rename 'Ariel' to 'Juliet'" href="/rename-ariel-to-juliet">Rename "Ariel" to "Juliet"</a></li>
+    </ul>
 
+    <h5>Delete</h5>
+    <ul>
         <li><a title='Delete the whole collection' href="/delete">Delete the whole collection</a></li>
+    </ul>
 
-        <li><a title='Display an EJS template' href="/template">Display an EJS template</a></li>
+    <hr>
+
+    <h5>EJS</h5>
+    <ul>
+        <li><a title='EJS example 1: template + database content' href="/template">EJS example 1: template + database content</a></li>
+        <li><a title='EJS example 2: non-official documentation' href="/testa">EJS example 2: non-official documentation</a></li>
     </ul>
     <script src="js/random-message.js"></script>
 </body>

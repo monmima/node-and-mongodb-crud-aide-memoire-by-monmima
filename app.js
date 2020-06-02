@@ -61,7 +61,6 @@ app.get('/template', (req, res) => {
 
         // name of the collection in the database
         dbo.collection("feedbacks").find().toArray((err, result) => {
-
             if (err) {
                 throw err;
             }
@@ -69,6 +68,19 @@ app.get('/template', (req, res) => {
             res.status(200).render("template", { feedbacks : result });
             db.close();
         });
+    });
+});
+
+/**
+ * EJS template
+ * https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_mongodb_query
+ */
+app.get('/testa', (req, res) => {
+    res.status(200).render("testa", {
+        node : {
+            dirname: __dirname,
+            filename: __filename
+        }
     });
 });
 

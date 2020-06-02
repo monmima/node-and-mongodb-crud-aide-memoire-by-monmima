@@ -6,13 +6,13 @@ Doing this exercice helped me wrap my head around how to have Node.js, MongoDB a
 
 The other reason why I created this is I couldn't find a similar tool for learning. The information I was able to gather was either fragmented or too complex (trying to teach EJS, MongoDB, Node.js, Mongoose all at the same time, for instance). As far as I know, no one else but [Programming Mentor](http://programmingmentor.com/post/save-form-nodejs-mongodb/) has done something similar, but his material is now outdated.
 
-## EJS: used on exactly one page of the site/app
+## EJS: used on exactly two pages of the site/app
 
-There is exactly **one page** of the site/app that uses EJS.
+There is exactly **two pages** of the site/app that use EJS.
 
-If you don't want to learn EJS from the get-go or if you don't want to be overwhelmed as a newcomer to MongoDB and Node.js, just don't take into account this part of the code. Maybe you'll feel ready for it later.
+If you don't want to learn EJS from the get-go or if you don't want to be overwhelmed as a newcomer to MongoDB and Node.js, just don't take into account this part of the code.
 
-Once you feel comfortable with Node.js and MongoDB, then you'll be ready for EJS. EJS is a templating tool that enables you to insert data from your database into .ejs files, which are then rendered into HTML.
+Once you feel comfortable with Node.js and MongoDB, then you'll be ready for EJS. EJS is a templating tool that enables you to insert data from your database into .ejs files, which are then rendered into HTML. To begin, I suggest to go to the ***EJS example 2: non-official documentation***. It's just EJS and Node.js. It's not even using MongoDB.
 
 ## The GET method
 
@@ -22,4 +22,4 @@ I might change this in the future.
 
 ## The starting point for this project
 
-The starting point for this exercise was [Programming Mentor's tutorial](http://programmingmentor.com/post/save-form-nodejs-mongodb/). The final result is now quite different. And given the important security issue and the outdated MongoDB 2.0, the code needed a major overhaul which makes it unrecognizable.
+The starting point for this exercise was [Programming Mentor's tutorial](http://programmingmentor.com/post/save-form-nodejs-mongodb/). The final result is now quite different. And given the important security issue and the outdated MongoDB 2.0, the code needed a major overhaul which makes it unrecognizable. Still, thank you, Programming Mentor! :-)

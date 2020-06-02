@@ -2,13 +2,13 @@
 
 This is a simple yet complete example of a CRUD app using Node.js and MongoDB.
 
-Doing this exercice helped me wrap my head around how to have Node.js, MongoDB and EJS interact with one another. It is also meant as a template and an aide-mémoire for myself.
+Doing this exercice helped me wrap my head around how to have Node.js, MongoDB interact with one another. It is also meant as a template and an **aide-mémoire** for myself.
 
 The other reason why I created this is I couldn't find a similar tool for learning. The information I was able to gather was either fragmented or too complex (trying to teach EJS, MongoDB, Node.js, Mongoose all at the same time, for instance). As far as I know, no one else but [Programming Mentor](http://programmingmentor.com/post/save-form-nodejs-mongodb/) has done something similar, but his material is now outdated.
 
 ## EJS: used on exactly two pages of the site/app
 
-There is exactly **two pages** of the site/app that use EJS.
+There are exactly **two pages** of the site/app that use EJS.
 
 If you don't want to learn EJS from the get-go or if you don't want to be overwhelmed as a newcomer to MongoDB and Node.js, just don't take into account this part of the code.
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EJS 3</title>
 
     <style>
         figure {
@@ -44,7 +44,9 @@
 <body>
     <%- include("header") %>
 
-    <h2>Main EJS template</h2>
+
+    <h1>EJS, example 3</h1>
+    <p>This is the main EJS template.</p>
 
     <div class="images">
         <figure>
@@ -62,7 +64,7 @@
 
     <p>The items below come from a MongoDB database.</p>
 
-    <p><strong>If nothing shows up below in black boxes</strong>, go back to the main page of the app and populate the database.</p>
+    <p><strong>If nothing shows up in the black boxes below</strong>, go back to the main page of the app and populate the database.</p>
 
     <div>
         <% for (let feedback of feedbacks) { %>

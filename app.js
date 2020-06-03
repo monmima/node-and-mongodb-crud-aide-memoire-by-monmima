@@ -47,10 +47,10 @@ app.post('/post-feedback', (req, res) => {
 });
 
 /**
- * EJS template
+ * EJS template 3
  * https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_mongodb_query
  */
-app.get('/template', (req, res) => {
+app.get('/ejs-3', (req, res) => {
     mongodb.connect(url, { useUnifiedTopology: true }, (err, db) => {
         if (err) {
             throw err;
@@ -65,23 +65,31 @@ app.get('/template', (req, res) => {
                 throw err;
             }
 
-            res.status(200).render("template", { feedbacks : result });
+            res.status(200).render("ejs-3", { feedbacks : result });
             db.close();
         });
     });
 });
 
 /**
- * EJS template
+ * EJS template 2
  * https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_mongodb_query
  */
-app.get('/testa', (req, res) => {
-    res.status(200).render("testa", {
+app.get('/ejs-2', (req, res) => {
+    res.status(200).render("ejs-2", {
         node : {
             dirname: __dirname,
             filename: __filename
         }
     });
+});
+
+/**
+ * EJS template 2
+ * https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_mongodb_query
+ */
+app.get('/ejs-1', (req, res) => {
+    res.status(200).render("ejs-1");
 });
 
 /**

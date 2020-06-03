@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS 2</title>
+</head>
+
+<h1>EJS, example 2</h1>
+
+<p>This page serves two purposes:</p>
+
+<ul>
+    <li>Show you you can use Node.js and EJS templating without MongoDB</li>
+    <li>Show you how the value of a Node.js variable can be added directly to a page.</li>
+</ul>
+
+<body>
+    <div>
+        <h3>For your information...</h3>
+        <dl>
+            <dt>__dirname</dt>
+            <dd><%= node.dirname %></dd>
+        </dl>
+        <dl>
+            <dt>__filename</dt>
+            <dd><%= node.filename %></dd>
+        </dl>
+    </div>
+</body>
+</html>

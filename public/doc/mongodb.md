@@ -1,4 +1,10 @@
-### Installation et démarrage
+# MongoDB
+
+I have to give credit where credit is due. Most of the content below is from the notes I took while watching (Brad Traversy's)[https://www.youtube.com/watch?v=-56x56UppqQ] MongoDB tutorial on YouTube. Thanks for making your tutorial!
+
+By the way, Brad Traversy has also created a MongoDB cheatsheet, which he (made available on Github Gist)[https://gist.github.com/bradtraversy/f407d642bdc3b31681bc7e56d95485b6]. His cheat sheet actually seems more complete than what you have below!
+
+### Installation
 
 sudo apt-get install mongodb
 sudo apt-get update

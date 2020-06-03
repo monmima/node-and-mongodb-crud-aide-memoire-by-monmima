@@ -10,10 +10,9 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
 
 /**
- * 
+ * serving static files from the "public" folder
+ * this includes: image, HTML and JS files, etc.
  */
-// serving static files from the "public" folder
-// this includes: image, HTML and JS files, etc.
 app.use(express.static(path.resolve(__dirname, 'public')));
 
 /**
@@ -208,7 +207,7 @@ app.get('/rename-ariel-to-juliet', (req, res) => {
 });
 
 /**
- * increment-ariel
+ * delete
  * https://www.w3schools.com/nodejs/shownodejs_cmd.asp?filename=demo_mongodb_query
  */
 app.get('/delete', (req, res) => {
@@ -252,6 +251,19 @@ app.get('/view-string-exactly-test', (req, res) => {
 
         });
     });
+});
+
+/**
+ * redirect
+ * Going to the "/redirect" page redirects to a Wikipedia page
+ * Steve Griffith - https://www.youtube.com/watch?v=cMbJ8hatqJ8&list=PLyuRouwmQCjne87u8XUdOM5oCl7vI2vVL
+ */
+app.get('/redirect', (req, res) => {
+    // absolute link to an external Web page
+    res.redirect(301, "https://en.wikipedia.org/wiki/Glossary_of_French_expressions_in_English");
+
+    // relative link to the main page
+    // res.redirect(301, "/");
 });
 
 /**

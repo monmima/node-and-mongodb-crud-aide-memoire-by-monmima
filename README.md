@@ -26,7 +26,7 @@ The starting point for this exercise was [Programming Mentor's tutorial](http://
 
 ## Final Notes
 
-Very late in my learning process I stumbled upon Steve Griffith's tutorials. I was impressed with the high quality of was he has to offer. On top of that he is an experienced teacher at Algonquin College in Ottawa:
+I stumbled upon Steve Griffith's tutorials at a very late stage in my journey. I was impressed with the high quality of was he has to offer. On top of that he is an experienced teacher at Algonquin College in Ottawa:
 
 - [Node.js](https://www.youtube.com/watch?v=UMKS6su8HQc&list=PLyuRouwmQCjnr-rRrhbPrS4YQ0brDQ-14)
 - [Express tutorials](https://www.youtube.com/watch?v=cMbJ8hatqJ8&list=PLyuRouwmQCjne87u8XUdOM5oCl7vI2vVL)

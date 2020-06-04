@@ -1,3 +1,9 @@
+/**
+ * the following line forces the declaration of variables
+ * if there is no declaration, it will create a bug
+ */
+// "use strict"
+
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');

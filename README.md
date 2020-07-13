@@ -2,7 +2,7 @@
 
 This is a simple yet complete example of a CRUD app using HTML, Node.js and MongoDB.
 
-Doing this exercice helped me wrap my head around how to have HTML, Node.js and MongoDB interact with one another all at the same time. It is also meant as a model and an ***aide-mémoire*** for myself, for future project.
+Doing this exercice helped me wrap my head around how to have HTML, Node.js and MongoDB interact with one another all at the same time. It is also meant as a model and an ***aide-mémoire*** for myself, for future projects.
 
 The other reason why I created this is I couldn't find a similar tool for learning. The information I was able to gather was often fragmented or too complex (trying to teach EJS, MongoDB, Node.js, Mongoose all at the same time, for instance). [Programming Mentor](http://programmingmentor.com/post/save-form-nodejs-mongodb/) is one of the few who has done something similar, but his material is now outdated.
 
@@ -26,7 +26,7 @@ The starting point for this exercise was [Programming Mentor's tutorial](http://
 
 ## Final Notes
 
-I stumbled upon Steve Griffith's tutorials at a very late stage in my journey. I was impressed with the high quality of was he has to offer. On top of that he is an experienced teacher at Algonquin College in Ottawa:
+I stumbled upon Steve Griffith's tutorials at a very late stage in my journey. I was impressed with the high quality of what he has to offer. On top of that he is an experienced teacher at Algonquin College in Ottawa:
 
 - [Node.js](https://www.youtube.com/watch?v=UMKS6su8HQc&list=PLyuRouwmQCjnr-rRrhbPrS4YQ0brDQ-14)
 - [Express tutorials](https://www.youtube.com/watch?v=cMbJ8hatqJ8&list=PLyuRouwmQCjne87u8XUdOM5oCl7vI2vVL)
